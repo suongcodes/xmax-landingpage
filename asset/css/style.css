@@ -44,7 +44,7 @@
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
-    top: var(--header-height);
+    top: -100%;
     left: 0;
     right: 0;
     width: 90%;
@@ -88,3 +88,85 @@
 }
 
 /* ============== SHOW MENU ============ */
+.show-menu {
+  top: calc(var(--header-height) + 1rem);
+}
+
+/* ========= ACTIVE-LINK======== */
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+}
+
+/* change background header */
+.scroll-header {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  background: rgba(218, 37, 53, 0.5);
+  border-radius: 0.4rem;
+  z-index: 0.4s;
+  transition: 0.4s;
+  /* visibility: hidden; */
+}
+.scrolltop:hover {
+  background-color: var(--first-color);
+}
+
+.scrolltop__icon {
+  font-size: 1.5rem;
+  color: var(--body-color);
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
+}
+
+/* ===== HOME ==== */
+.home__container {
+  row-gap: 0.5rem;
+}
+
+.home__img {
+  width: 280px;
+  justify-content: center;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-2);
+}
+.home__description {
+  margin-bottom: var(--mb-3);
+}
+
+/* ======= BUTTON ====== */
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-semi-bold);
+  transition: 0.3s;
+}
