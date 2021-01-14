@@ -1,63 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asset/css/style.css">
-    <link rel="stylesheet" href="./asset/css/base.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./asset/css/style.css">
+        <link rel="stylesheet" href="./asset/css/base.css">
 
-    <!-- ----- box icon------ -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <title>Xmax Landing page</title>
-</head>
-<body>
-   <!-- ===== scroll top ====== -->
-    <a href="#" class="scrolltop show-scroll " id="scroll-top">
-        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
-    </a>
+        <!-- ----- box icon------ -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <title>Xmax Landing page</title>
+    </head>
+    <body>
+    <!-- ===== scroll top ====== -->
+        <a href="#" class="scrolltop show-scroll " id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
 
-   <!-- ==== header ===== -->
+    <!-- ==== header ===== -->
 
-   <header class="l-header" id="header">
-       <nav class="nav bd-container">
-           <a href="" class="nav__logo">Christmas Gift</a>
-           <div class="nav__menu" id="nav_menu">
-               <ul class="nav__list">
-                   <li class="nav__item"><a href="#" class="nav__link active-link ">Home</a></li>
-                   <li class="nav__item"><a href="#" class="nav__link">Share</a></li>
-                   <li class="nav__item"><a href="#" class="nav__link">Decoration</a></li>
-                   <li class="nav__item"><a href="#" class="nav__link">Accessory</a></li>
-               </ul>
-           </div>
-           <div class="nav__toggle" id="nav-toggle">
-               <i class='bx bx-grid-alt'></i>   
-           </div>
-       </nav>
-   </header>
-
-   <main class="l-main">
-        <section class="home" id="home">
-            <div class="home__container bd-container bd-grid">
-                <div class="home__img">
-                    <img src="/asset/img/home.png" alt="">
-                </div>
-
-                <div class="home__data">
-                    <h1 class="home__title">Send A Gift For Christmas</h1>
-                    <p class="home__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ex quisquam asperiores, doloribus beatae expedita placeat cupiditate recusandae eaque officiis odit dolorem quibusdam soluta nobis nostrum necessitatibus optio! Et, sint.</p>
-                    <a href="" class="button">Get Started</a>
-                </div>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="" class="nav__logo">Christmas Gift</a>
+            <div class="nav__menu show-menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link ">Home</a></li>
+                    <li class="nav__item"><a href="#share" class="nav__link">Share</a></li>
+                    <li class="nav__item"><a href="#decoration" class="nav__link">Decoration</a></li>
+                    <li class="nav__item"><a href="#ccessory" class="nav__link">Accessory</a></li>
+                </ul>
             </div>
-        </section>
-   </main>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>   
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <img src="/asset/img/home.png" alt="">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Send A Gift For Christmas</h1>
+                        <p class="home__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ex quisquam asperiores, doloribus beatae expedita placeat cupiditate recusandae eaque officiis odit dolorem quibusdam soluta nobis nostrum necessitatibus optio! Et, sint.</p>
+                        <a href="" class="button">Get Started</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= SHARE ====== -->
+            
+        <section class="share section bd-container" id="share">
+                    <div class="share__container bd-grid">
+                        <div class="share__data">
+                            <h2 class="section-title-center">Sharing Is The Best Gift <br> You Can Give</h2>
+                            <p class="share__description">Sharing these holidays is the best gift you can give, give a present or share your love with the people you love the most and celebrate with great happiness.</p>
+                            <a href="#" class="button">Send a Gift</a>
+                        </div>
+
+                        <div class="share__img">
+                            <img src="/asset/img/shared.png" alt="">
+                        </div>
+                    </div>
+                </section>
+
+            <section class="decoration section bd-container" id="decoration">
+
+            </section>
+    </main>
 
 
-<!-- ----- scroll reveal ----- -->
-<script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- scroll reveal ----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-<!-- ----- Javascript ------ -->
-<script src="/asset//js/main.js"></script>
-</body>
+    <!-- ----- Javascript ------ -->
+    <script src="/asset//js/main.js"></script>
+    </body>
 </html>
 
 

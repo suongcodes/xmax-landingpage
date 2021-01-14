@@ -1,14 +1,19 @@
+/*==================== SHOW MENU ====================*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
+    
+    // xac thuc cac bien ton tai
     if(toggle && nav){
-        toggle.addEventListener('click',function(){
+        toggle.addEventListener('click', ()=>{
+            //them lop show-menu vao the div nav__menu 
             nav.classList.toggle('show-menu')
         })
     }
 }
+showMenu('nav-toggle','nav-menu')
 
-showMenu('nav-toggle','nav_menu')
+
 
 
 // ========= REMOVE MENU MOBILE JS ===============
@@ -52,7 +57,6 @@ function scrollHeader(){
     if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
-
 // ====== show Scroll Top ======
 
 function scrollTop(){
@@ -61,3 +65,7 @@ function scrollTop(){
     if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
+
+
+
+
