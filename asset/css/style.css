@@ -187,3 +187,25 @@
   width: 280px;
   justify-self: center;
 }
+
+/* ==== Decoration ===== */
+.decoration__container{
+  grid-template-columns: repeat(auto-fit, mimax(220px,1fr));
+}
+
+.decoration__data{
+  text-align: center;
+  padding: 1rem 1rem 2rem;
+  background-color: var(--container-color);
+  box-shadow:0 2px 6px; rgba(65,11,16,.15);
+  border-radius: 1rem;
+  margin: var(--mb-1);
+}
+.decoration__data:hover{
+  box-shadow: 0 3px 12px rgba(65,11,16,.15);
+}
+
+.decoration__img{
+  width: 180px;
+  margin-bottom:var(--mb-1);
+}
