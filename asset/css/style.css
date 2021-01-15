@@ -123,7 +123,7 @@
   padding: 0.3rem;
   background: rgba(218, 37, 53, 0.5);
   border-radius: 0.4rem;
-  z-index: 0.4s;
+  z-index: var(--z-tooltip);
   transition: 0.4s;
   /* visibility: hidden; */
 }
@@ -190,7 +190,7 @@
 
 /* ==== Decoration ===== */
 .decoration__container {
-  grid-template-columns: repeat(auto-fit, mimax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .decoration__data {
@@ -279,4 +279,127 @@
   font-size: 1.25rem;
   padding: 0.5rem 0.625rem;
   border-radius: 1rem 0 1rem 0;
+}
+
+/* ===== SEND GIFT ===== */
+.send {
+  background-color: var(--first-color-send);
+}
+
+.send__title,
+.send__description {
+  color: #fff;
+}
+
+.send__description {
+  text-align: center;
+  margin-bottom: var(--mb-4);
+}
+
+.send__direction {
+  display: flex;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.send__input {
+  width: 90%;
+  outline: none;
+  border: none;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+}
+
+.send__input::placeholder {
+  font-family: var(--body-font);
+}
+
+.send__img {
+  width: 280px;
+  justify-self: center;
+}
+
+/* ===== FOOTER ===== */
+.footer__container {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.footer__logo {
+  color: var(--title-color);
+}
+
+.footer__title {
+  margin-bottom: var(--mb-2);
+}
+
+.footer__logo,
+.footer__title {
+  font-size: var(--h3-font-size);
+}
+
+.footer_link {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+}
+
+.footer__link:hover {
+  color: var(--first-color);
+}
+
+.footer_social {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin-bottom: var(--mb-3);
+}
+.footer_sociall:hover {
+  color: var(--first-color);
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: var(--small-font-size);
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 359px) {
+  .home__img,
+  .share__img,
+  .send__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .home__container,
+  .share__container,
+  .send__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .home__container {
+    padding: 5rem 0 0;
+  }
+
+  .home__img {
+    order: 1;
+  }
+
+  .section-title-center,
+  .share__data,
+  .send__description {
+    text-align: initial;
+  }
+
+  .home__img,
+  .share__img,
+  .send__img {
+    width: 100%;
+  }
+
+  .share__img {
+    order: -1;
+  }
 }
